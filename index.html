@@ -5,33 +5,31 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>Noticias NY</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<section>
-		<div class="container">
-			<div class="row principal">
-				<h1>¿Que te interesa hoy?</h1>
-				<div class="row">
-					<div class="col-lg-12 divBusqueda">
-						<form id="search-form">
-							<input id="inputSearch" type="text" name="search" placeholder="¿sobre que deseas leer?" class="input-group col-lg-8">
-							<button type="submit" class="btn btn-primary col-lg-3">Submit!</button>
-						</form>
-					</div>		
-				</div>
-			</div>
-		</div>	
-	</section>
 
-	<section>
-		<div class="container">	
-			<div class="row">
-				<div id="noticia">
-				</div>	
-			</div>
-		</div>
-	</section>
-	
+<header> 
+	<div class="container">
+		<div class="row">
+			<h1>¿Que te interesa hoy?</h1>
+			<form id="search-form">
+			<label>¿que buscamos?</label>
+			<br>
+			<input id='search-keyword' class="col-lg-6" type="text" name="search-keyword" placeholder="e.g Android" required>
+			<input id='submit-btn' class="btn" type="submit" value="Submit">
+		</form>
+		</div> 
+	</div>
+</header> 
+
+<div class="container">
+	<div class="row">
+		<ul id="response-container"></ul>
+	</div>
+</div>
+
+<script type="text/javascript" src='js/app.js'></script>
 </body>
 </html>
